@@ -1,0 +1,79 @@
+name: Compress PDFs and Build Catalog
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'subjects/**'
+  workflow_dispatch: # Enables the manual "Run workflow" button in GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Ghostscript & Python
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ghostscript python3
+
+      - name: Auto-compress new/modified PDFs
+        run: |
+          git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep '\.pdf$' | while read -r file; do
+            if [ -f "$file" ]; then
+              echo "Compressing $file..."
+              gs -sDEVICE=pdfwrite \
+                 -dCompatibilityLevel=1.4 \
+                 -dPDFSETTINGS=/ebook \
+                 -dNOPAUSE -dQUIET -dBATCH \
+                 -sOutputFile="${file}.tmp" "$file"
+              if [ -f "${file}.tmp" ]; then
+                mv "${file}.tmp" "$file"
+              fi
+            fi
+          done
+
+      - name: Generate catalog.json
+        run: |
+          python3 -c '
+          import os, json
+
+          subjects_dir = "subjects"
+          catalog = {}
+
+          if os.path.exists(subjects_dir):
+              for subject in sorted(os.listdir(subjects_dir)):
+                  sub_path = os.path.join(subjects_dir, subject)
+                  if os.path.isdir(sub_path):
+                      catalog[subject] = {}
+                      for cat in ["lessons", "assignments", "labs", "exams", "summaries"]:
+                          cat_path = os.path.join(sub_path, cat)
+                          catalog[subject][cat] = []
+                          if os.path.exists(cat_path) and os.path.isdir(cat_path):
+                              for f in sorted(os.listdir(cat_path)):
+                                  if f.lower().endswith(".pdf"):
+                                      full_file_path = os.path.join(cat_path, f)
+                                      file_size = os.path.getsize(full_file_path)
+                                      catalog[subject][cat].append({
+                                          "name": f,
+                                          "path": f"subjects/{subject}/{cat}/{f}",
+                                          "size": file_size
+                                      })
+
+          with open("catalog.json", "w", encoding="utf-8") as out:
+              json.dump(catalog, out, indent=2)
+          print("Successfully generated catalog.json")
+          '
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-compressed PDFs and updated catalog.json [skip ci]"
