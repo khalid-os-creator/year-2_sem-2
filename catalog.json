@@ -19,7 +19,33 @@
         "size": 496959
       }
     ],
-    "exams": [],
+    "exams": [
+      {
+        "name": "Exam 2019 B2CS.pdf",
+        "path": "subjects/analog/exams/Exam 2019 B2CS.pdf",
+        "size": 3175929
+      },
+      {
+        "name": "Exam 2021-2022 B2CS.pdf",
+        "path": "subjects/analog/exams/Exam 2021-2022 B2CS.pdf",
+        "size": 478787
+      },
+      {
+        "name": "Exams.pdf",
+        "path": "subjects/analog/exams/Exams.pdf",
+        "size": 11894944
+      },
+      {
+        "name": "\u0646\u0645\u0648\u0630\u062c \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "path": "subjects/analog/exams/\u0646\u0645\u0648\u0630\u062c \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "size": 400376
+      },
+      {
+        "name": "\u0646\u0645\u0648\u0630\u062c \u0627\u0646\u0627\u0644\u0648\u062c_260608_115702.pdf",
+        "path": "subjects/analog/exams/\u0646\u0645\u0648\u0630\u062c \u0627\u0646\u0627\u0644\u0648\u062c_260608_115702.pdf",
+        "size": 400425
+      }
+    ],
     "summaries": [
       {
         "name": "[\u0645\u0644\u062e\u0635_\u0644\u0627\u0628_\u0627\u0644\u0627\u0646\u0627\u0644\u0648\u062c]_B2IT.pdf",
