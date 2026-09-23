@@ -1,0 +1,481 @@
+{
+  "analog": {
+    "lessons": [],
+    "assignments": [],
+    "labs": [
+      {
+        "name": "Analog electronics  lab (1).pdf",
+        "path": "subjects/analog/labs/Analog electronics  lab (1).pdf",
+        "size": 1034450
+      },
+      {
+        "name": "Analog electronics lab (2).pdf",
+        "path": "subjects/analog/labs/Analog electronics lab (2).pdf",
+        "size": 702398
+      },
+      {
+        "name": "Analog lab (3) .pdf",
+        "path": "subjects/analog/labs/Analog lab (3) .pdf",
+        "size": 496959
+      }
+    ],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "[\u0645\u0644\u062e\u0635_\u0644\u0627\u0628_\u0627\u0644\u0627\u0646\u0627\u0644\u0648\u062c]_B2IT.pdf",
+        "path": "subjects/analog/summaries/[\u0645\u0644\u062e\u0635_\u0644\u0627\u0628_\u0627\u0644\u0627\u0646\u0627\u0644\u0648\u062c]_B2IT.pdf",
+        "size": 3371547
+      },
+      {
+        "name": "[\u0645\u0644\u062e\u0635_\u0644\u0627\u0628_\u0627\u0644\u0627\u0646\u0627\u0644\u0648\u062c]_B2IT_260608_115551.pdf",
+        "path": "subjects/analog/summaries/[\u0645\u0644\u062e\u0635_\u0644\u0627\u0628_\u0627\u0644\u0627\u0646\u0627\u0644\u0648\u062c]_B2IT_260608_115551.pdf",
+        "size": 3368854
+      },
+      {
+        "name": "analog ch 1_2.pdf",
+        "path": "subjects/analog/summaries/analog ch 1_2.pdf",
+        "size": 4234375
+      },
+      {
+        "name": "\u0645\u0643\u062b\u0641\u0629 \u0627\u0646\u0627\u0644\u0648\u062c (2).pdf",
+        "path": "subjects/analog/summaries/\u0645\u0643\u062b\u0641\u0629 \u0627\u0646\u0627\u0644\u0648\u062c (2).pdf",
+        "size": 5319295
+      },
+      {
+        "name": "\u0645\u0643\u062b\u0641\u0629 \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "path": "subjects/analog/summaries/\u0645\u0643\u062b\u0641\u0629 \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "size": 8085641
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "path": "subjects/analog/summaries/\u0645\u0644\u062e\u0635 \u0627\u0646\u0627\u0644\u0648\u062c.pdf",
+        "size": 4383788
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635_\u0641\u0627\u0631\u0648\u0642_Analog_Electronic_B2IT_260608_115534.pdf",
+        "path": "subjects/analog/summaries/\u0645\u0644\u062e\u0635_\u0641\u0627\u0631\u0648\u0642_Analog_Electronic_B2IT_260608_115534.pdf",
+        "size": 4380197
+      }
+    ]
+  },
+  "communication-system": {
+    "lessons": [
+      {
+        "name": "CS_Lesson_1_Dr-Shada.pdf",
+        "path": "subjects/communication-system/lessons/CS_Lesson_1_Dr-Shada.pdf",
+        "size": 25782571
+      },
+      {
+        "name": "CS_Lesson_2_Dr-Shada.pdf",
+        "path": "subjects/communication-system/lessons/CS_Lesson_2_Dr-Shada.pdf",
+        "size": 13153725
+      },
+      {
+        "name": "CS_Lesson_3_Dr-Shada.pdf",
+        "path": "subjects/communication-system/lessons/CS_Lesson_3_Dr-Shada.pdf",
+        "size": 2883189
+      },
+      {
+        "name": "Principal of communication systems (7).pdf",
+        "path": "subjects/communication-system/lessons/Principal of communication systems (7).pdf",
+        "size": 4997374
+      },
+      {
+        "name": "principal of communication systems  (1).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems  (1).pdf",
+        "size": 3247842
+      },
+      {
+        "name": "principal of communication systems (2).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (2).pdf",
+        "size": 3665152
+      },
+      {
+        "name": "principal of communication systems (3).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (3).pdf",
+        "size": 4033679
+      },
+      {
+        "name": "principal of communication systems (4).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (4).pdf",
+        "size": 4553918
+      },
+      {
+        "name": "principal of communication systems (5).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (5).pdf",
+        "size": 4240576
+      },
+      {
+        "name": "principal of communication systems (6).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (6).pdf",
+        "size": 6689708
+      },
+      {
+        "name": "principal of communication systems (8).pdf",
+        "path": "subjects/communication-system/lessons/principal of communication systems (8).pdf",
+        "size": 4365169
+      }
+    ],
+    "assignments": [],
+    "labs": [],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "CS_Summary_Diagram-Chapter-1.pdf",
+        "path": "subjects/communication-system/summaries/CS_Summary_Diagram-Chapter-1.pdf",
+        "size": 2306556
+      },
+      {
+        "name": "CS_Summary_Diagram-Chapter-2.pdf",
+        "path": "subjects/communication-system/summaries/CS_Summary_Diagram-Chapter-2.pdf",
+        "size": 591712
+      },
+      {
+        "name": "CS_Summry_\u0643\u0644_\u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0627\u062a_\u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629.pdf",
+        "path": "subjects/communication-system/summaries/CS_Summry_\u0643\u0644_\u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0627\u062a_\u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629.pdf",
+        "size": 215749
+      },
+      {
+        "name": "POcommunication_260502_143255.pdf",
+        "path": "subjects/communication-system/summaries/POcommunication_260502_143255.pdf",
+        "size": 6782871
+      },
+      {
+        "name": "Principle of Communication_260502_143223.pdf",
+        "path": "subjects/communication-system/summaries/Principle of Communication_260502_143223.pdf",
+        "size": 523338
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 \u0627\u0644 AM.PDF",
+        "path": "subjects/communication-system/summaries/\u0645\u0644\u062e\u0635 \u0627\u0644 AM.PDF",
+        "size": 13096309
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 1 \u0644 communication systems \u0645\u0639\u0647\u062f .pdf",
+        "path": "subjects/communication-system/summaries/\u0645\u0644\u062e\u0635 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 1 \u0644 communication systems \u0645\u0639\u0647\u062f .pdf",
+        "size": 4448115
+      }
+    ]
+  },
+  "computer-architecture": {
+    "lessons": [
+      {
+        "name": "CA_Lesson_1_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_1_Dr-Shada.pdf",
+        "size": 584027
+      },
+      {
+        "name": "CA_Lesson_2_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_2_Dr-Shada.pdf",
+        "size": 822829
+      },
+      {
+        "name": "CA_Lesson_3_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_3_Dr-Shada.pdf",
+        "size": 1039272
+      },
+      {
+        "name": "CA_Lesson_4_Dr-Shada.pdf.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_4_Dr-Shada.pdf.pdf",
+        "size": 1107322
+      },
+      {
+        "name": "CA_Lesson_5_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_5_Dr-Shada.pdf",
+        "size": 458929
+      },
+      {
+        "name": "CA_Lesson_6_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_6_Dr-Shada.pdf",
+        "size": 151383
+      },
+      {
+        "name": "CA_Lesson_7_Dr-Shada.pdf",
+        "path": "subjects/computer-architecture/lessons/CA_Lesson_7_Dr-Shada.pdf",
+        "size": 195128
+      }
+    ],
+    "assignments": [],
+    "labs": [],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "CA_Summary(Arabic).pdf",
+        "path": "subjects/computer-architecture/summaries/CA_Summary(Arabic).pdf",
+        "size": 159767
+      },
+      {
+        "name": "Computer Architecture and Organization. lecture 1.pdf",
+        "path": "subjects/computer-architecture/summaries/Computer Architecture and Organization. lecture 1.pdf",
+        "size": 1582124
+      },
+      {
+        "name": "Computer Architecture \u0645\u062a\u0631\u062c\u0645.pdf",
+        "path": "subjects/computer-architecture/summaries/Computer Architecture \u0645\u062a\u0631\u062c\u0645.pdf",
+        "size": 2768594
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 computer architecture.pdf",
+        "size": 1479668
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062b\u0627\u0644\u062b\u0629 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062b\u0627\u0644\u062b\u0629 computer architecture.pdf",
+        "size": 5011279
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629 Computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629 Computer architecture.pdf",
+        "size": 2116855
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062e\u0627\u0645\u0633\u0629 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u062e\u0627\u0645\u0633\u0629 computer architecture.pdf",
+        "size": 5148566
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 computer architecture.pdf",
+        "size": 4169388
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0633\u0627\u0628\u0639\u0629 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0633\u0627\u0628\u0639\u0629 computer architecture.pdf",
+        "size": 5922332
+      },
+      {
+        "name": "\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0633\u0627\u062f\u0633\u0629 computer architecture.pdf",
+        "path": "subjects/computer-architecture/summaries/\u0627\u0644\u0645\u062d\u0630\u0648\u0641 \u0645\u0646 \u0627\u0644\u0645\u0644\u0632\u0645\u0629 \u0627\u0644\u0633\u0627\u062f\u0633\u0629 computer architecture.pdf",
+        "size": 3311411
+      }
+    ]
+  },
+  "data-structure": {
+    "lessons": [
+      {
+        "name": "DS_Lesson-1_2_3.pdf",
+        "path": "subjects/data-structure/lessons/DS_Lesson-1_2_3.pdf",
+        "size": 61248019
+      },
+      {
+        "name": "DS_Lesson-4.pdf",
+        "path": "subjects/data-structure/lessons/DS_Lesson-4.pdf",
+        "size": 5067811
+      },
+      {
+        "name": "DS_Lesson-5.pdf",
+        "path": "subjects/data-structure/lessons/DS_Lesson-5.pdf",
+        "size": 1464108
+      },
+      {
+        "name": "Data Structure (1).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (1).pdf",
+        "size": 2027331
+      },
+      {
+        "name": "Data Structure (2).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (2).pdf",
+        "size": 5131933
+      },
+      {
+        "name": "Data Structure (3).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (3).pdf",
+        "size": 2130906
+      },
+      {
+        "name": "Data Structure (4).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (4).pdf",
+        "size": 2169759
+      },
+      {
+        "name": "Data Structure (5).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (5).pdf",
+        "size": 3592355
+      },
+      {
+        "name": "Data Structure (6).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (6).pdf",
+        "size": 3580604
+      },
+      {
+        "name": "Data Structure (8).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (8).pdf",
+        "size": 4577481
+      },
+      {
+        "name": "Data Structure (9).pdf",
+        "path": "subjects/data-structure/lessons/Data Structure (9).pdf",
+        "size": 2089389
+      }
+    ],
+    "assignments": [],
+    "labs": [
+      {
+        "name": "DS_Lab-1.pdf",
+        "path": "subjects/data-structure/labs/DS_Lab-1.pdf",
+        "size": 287306
+      },
+      {
+        "name": "DS_Lab-2_2024-2025.pdf",
+        "path": "subjects/data-structure/labs/DS_Lab-2_2024-2025.pdf",
+        "size": 305801
+      },
+      {
+        "name": "DS_Lab-3_2024-2025.pdf",
+        "path": "subjects/data-structure/labs/DS_Lab-3_2024-2025.pdf",
+        "size": 166133
+      },
+      {
+        "name": "DS_Lab-4_2024-2025.pdf",
+        "path": "subjects/data-structure/labs/DS_Lab-4_2024-2025.pdf",
+        "size": 141279
+      },
+      {
+        "name": "DS_Lab-5_2024-2025.pdf",
+        "path": "subjects/data-structure/labs/DS_Lab-5_2024-2025.pdf",
+        "size": 151996
+      },
+      {
+        "name": "Data Structure_Lab1.pdf",
+        "path": "subjects/data-structure/labs/Data Structure_Lab1.pdf",
+        "size": 287306
+      }
+    ],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "convert to postfix by stack.pdf",
+        "path": "subjects/data-structure/summaries/convert to postfix by stack.pdf",
+        "size": 2697051
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 BST.pdf",
+        "path": "subjects/data-structure/summaries/\u0645\u0644\u062e\u0635 BST.pdf",
+        "size": 1002334
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 infix , Prefix , postfix.pdf",
+        "path": "subjects/data-structure/summaries/\u0645\u0644\u062e\u0635 infix , Prefix , postfix.pdf",
+        "size": 324397
+      },
+      {
+        "name": "\u0645\u0644\u062e\u0635 \u0645\u062d\u0627\u0636\u0631\u0629 \u0627\u0644\u0627\u0648\u0644\u0649 \u0644\u062f\u0627\u062a\u0627 \u0633\u062a\u0631\u0627\u0643\u0634\u0631.pdf",
+        "path": "subjects/data-structure/summaries/\u0645\u0644\u062e\u0635 \u0645\u062d\u0627\u0636\u0631\u0629 \u0627\u0644\u0627\u0648\u0644\u0649 \u0644\u062f\u0627\u062a\u0627 \u0633\u062a\u0631\u0627\u0643\u0634\u0631.pdf",
+        "size": 2775628
+      }
+    ]
+  },
+  "logic-design": {
+    "lessons": [
+      {
+        "name": "LD_Lesson_1_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_1_2025-2026.pdf",
+        "size": 3285793
+      },
+      {
+        "name": "LD_Lesson_2025-2026.pdf.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_2025-2026.pdf.pdf",
+        "size": 51329799
+      },
+      {
+        "name": "LD_Lesson_2_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_2_2025-2026.pdf",
+        "size": 3745574
+      },
+      {
+        "name": "LD_Lesson_3_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_3_2025-2026.pdf",
+        "size": 2503257
+      },
+      {
+        "name": "LD_Lesson_4_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_4_2025-2026.pdf",
+        "size": 1294819
+      },
+      {
+        "name": "LD_Lesson_5_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_5_2025-2026.pdf",
+        "size": 1818109
+      },
+      {
+        "name": "LD_Lesson_6_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_6_2025-2026.pdf",
+        "size": 2127726
+      },
+      {
+        "name": "LD_Lesson_7_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_7_2025-2026.pdf",
+        "size": 4832853
+      },
+      {
+        "name": "LD_Lesson_8_2025-2026.pdf",
+        "path": "subjects/logic-design/lessons/LD_Lesson_8_2025-2026.pdf",
+        "size": 682875
+      }
+    ],
+    "assignments": [],
+    "labs": [],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "IntoD to Logic.pdf",
+        "path": "subjects/logic-design/summaries/IntoD to Logic.pdf",
+        "size": 701710
+      },
+      {
+        "name": "logic_design_handbook_national.pdf",
+        "path": "subjects/logic-design/summaries/logic_design_handbook_national.pdf",
+        "size": 88227
+      },
+      {
+        "name": "\u062d\u0644\u0648\u0644 \u0645\u0633\u0627\u0626\u0644 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0644\u0648\u062c\u064a\u0643.pdf",
+        "path": "subjects/logic-design/summaries/\u062d\u0644\u0648\u0644 \u0645\u0633\u0627\u0626\u0644 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0644\u0648\u062c\u064a\u0643.pdf",
+        "size": 1869121
+      }
+    ]
+  },
+  "math-4": {
+    "lessons": [],
+    "assignments": [],
+    "labs": [],
+    "exams": [],
+    "summaries": [
+      {
+        "name": "Math-4_Summary_1-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_1-Yaqub.pdf",
+        "size": 6429932
+      },
+      {
+        "name": "Math-4_Summary_2-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_2-Yaqub.pdf",
+        "size": 3162054
+      },
+      {
+        "name": "Math-4_Summary_3-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_3-Yaqub.pdf",
+        "size": 5333718
+      },
+      {
+        "name": "Math-4_Summary_4-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_4-Yaqub.pdf",
+        "size": 2013787
+      },
+      {
+        "name": "Math-4_Summary_5-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_5-Yaqub.pdf",
+        "size": 3993826
+      },
+      {
+        "name": "Math-4_Summary_8-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_8-Yaqub.pdf",
+        "size": 4537364
+      },
+      {
+        "name": "Math-4_Summary_9-Yaqub.pdf",
+        "path": "subjects/math-4/summaries/Math-4_Summary_9-Yaqub.pdf",
+        "size": 2691660
+      }
+    ]
+  }
+}
