@@ -144,7 +144,38 @@
     ],
     "assignments": [],
     "labs": [],
-    "exams": [],
+    "exams": [
+      {
+        "name": "CS_Exam-2025(solved).pdf",
+        "path": "subjects/communication-system/exams/CS_Exam-2025(solved).pdf",
+        "size": 945911
+      },
+      {
+        "name": "CS_Exam_1_Dr-Shada.pdf",
+        "path": "subjects/communication-system/exams/CS_Exam_1_Dr-Shada.pdf",
+        "size": 857465
+      },
+      {
+        "name": "CS_Exam_Dr-Shada-2025.pdf",
+        "path": "subjects/communication-system/exams/CS_Exam_Dr-Shada-2025.pdf",
+        "size": 1977006
+      },
+      {
+        "name": "CS_Exam_Dr-Shada_2024(solved).pdf",
+        "path": "subjects/communication-system/exams/CS_Exam_Dr-Shada_2024(solved).pdf",
+        "size": 2882829
+      },
+      {
+        "name": "CS_Exam_Dr-Shada_2024-2025.pdf",
+        "path": "subjects/communication-system/exams/CS_Exam_Dr-Shada_2024-2025.pdf",
+        "size": 2147805
+      },
+      {
+        "name": "CS_Exam_Dr-Shada_New.pdf",
+        "path": "subjects/communication-system/exams/CS_Exam_Dr-Shada_New.pdf",
+        "size": 838176
+      }
+    ],
     "summaries": [
       {
         "name": "CS_Summary_Diagram-Chapter-1.pdf",
@@ -223,7 +254,13 @@
     ],
     "assignments": [],
     "labs": [],
-    "exams": [],
+    "exams": [
+      {
+        "name": "CA-Exam-2025(Solved).pdf",
+        "path": "subjects/computer-architecture/exams/CA-Exam-2025(Solved).pdf",
+        "size": 1988473
+      }
+    ],
     "summaries": [
       {
         "name": "CA_Summary(Arabic).pdf",
@@ -368,7 +405,23 @@
         "size": 287306
       }
     ],
-    "exams": [],
+    "exams": [
+      {
+        "name": "DS_Exam_Dr-Shada.pdf",
+        "path": "subjects/data-structure/exams/DS_Exam_Dr-Shada.pdf",
+        "size": 4623534
+      },
+      {
+        "name": "data test with solve.pdf",
+        "path": "subjects/data-structure/exams/data test with solve.pdf",
+        "size": 1176488
+      },
+      {
+        "name": "\u0646\u0645\u0627\u0630\u062c \u0634\u0630\u0649 \u0627\u062e\u062a\u0628\u0627\u0631 Data.pdf",
+        "path": "subjects/data-structure/exams/\u0646\u0645\u0627\u0630\u062c \u0634\u0630\u0649 \u0627\u062e\u062a\u0628\u0627\u0631 Data.pdf",
+        "size": 858269
+      }
+    ],
     "summaries": [
       {
         "name": "convert to postfix by stack.pdf",
@@ -442,7 +495,38 @@
     ],
     "assignments": [],
     "labs": [],
-    "exams": [],
+    "exams": [
+      {
+        "name": "LD-Exam2017.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam2017.pdf",
+        "size": 1660859
+      },
+      {
+        "name": "LD-Exam2021.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam2021.pdf",
+        "size": 187744
+      },
+      {
+        "name": "LD-Exam2023.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam2023.pdf",
+        "size": 612193
+      },
+      {
+        "name": "LD-Exam2025-2026.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam2025-2026.pdf",
+        "size": 2123800
+      },
+      {
+        "name": "LD-Exam2025.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam2025.pdf",
+        "size": 1676325
+      },
+      {
+        "name": "LD-Exam_2024.pdf",
+        "path": "subjects/logic-design/exams/LD-Exam_2024.pdf",
+        "size": 1016176
+      }
+    ],
     "summaries": [
       {
         "name": "IntoD to Logic.pdf",
