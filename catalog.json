@@ -1,12 +1,19 @@
 {
   "_metadata": {
-    "generated_at": 1790244796,
+    "generated_at": 1790247949,
     "total_subjects": 6,
-    "total_files": 106
+    "total_files": 108
   },
   "subjects": {
     "analog": {
-      "lessons": [],
+      "lessons": [
+        {
+          "name": "analog electronics (2).pdf",
+          "path": "subjects/analog/lessons/analog electronics (2).pdf",
+          "size_bytes": 538899,
+          "size_formatted": "526.3 KB"
+        }
+      ],
       "assignments": [],
       "labs": [
         {
@@ -61,6 +68,12 @@
         }
       ],
       "summaries": [
+        {
+          "name": "Solved Examples by Eng. Alaa Nabil.pdf",
+          "path": "subjects/analog/summaries/Solved Examples by Eng. Alaa Nabil.pdf",
+          "size_bytes": 175170,
+          "size_formatted": "171.1 KB"
+        },
         {
           "name": "[ملخص_لاب_الانالوج]_B2IT.pdf",
           "path": "subjects/analog/summaries/[ملخص_لاب_الانالوج]_B2IT.pdf",
