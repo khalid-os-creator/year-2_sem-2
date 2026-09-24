@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'subjects/**'
-  workflow_dispatch: # Enables the manual "Run workflow" button in GitHub Actions UI
+  workflow_dispatch: # Enables manual triggering via GitHub Actions UI
 
 permissions:
   contents: write
@@ -25,52 +25,100 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ghostscript python3
 
-      - name: Auto-compress new/modified PDFs
+      - name: Auto-compress new or modified PDFs
         run: |
-          git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep '\.pdf$' | while read -r file; do
-            if [ -f "$file" ]; then
-              echo "Compressing $file..."
-              gs -sDEVICE=pdfwrite \
-                 -dCompatibilityLevel=1.4 \
-                 -dPDFSETTINGS=/ebook \
-                 -dNOPAUSE -dQUIET -dBATCH \
-                 -sOutputFile="${file}.tmp" "$file"
-              if [ -f "${file}.tmp" ]; then
-                mv "${file}.tmp" "$file"
+          # Safe git diff check: falls back to all files if HEAD~1 does not exist
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep '\.pdf$' || true)
+          else
+            FILES=$(find subjects -type f -name "*.pdf" 2>/dev/null || true)
+          fi
+
+          if [ -z "$FILES" ]; then
+            echo "No PDF changes detected."
+          else
+            echo "$FILES" | while read -r file; do
+              if [ -f "$file" ]; then
+                echo "Processing: $file"
+                ORIG_SIZE=$(stat -c%s "$file")
+                
+                # Compress via Ghostscript
+                gs -sDEVICE=pdfwrite \
+                   -dCompatibilityLevel=1.4 \
+                   -dPDFSETTINGS=/ebook \
+                   -dNOPAUSE -dQUIET -dBATCH \
+                   -sOutputFile="${file}.tmp" "$file" || true
+
+                if [ -f "${file}.tmp" ]; then
+                  NEW_SIZE=$(stat -c%s "${file}.tmp")
+                  # Only replace if compressed file is smaller and non-empty
+                  if [ "$NEW_SIZE" -lt "$ORIG_SIZE" ] && [ "$NEW_SIZE" -gt 0 ]; then
+                    mv "${file}.tmp" "$file"
+                    echo "Compressed: $ORIG_SIZE -> $NEW_SIZE bytes"
+                  else
+                    rm -f "${file}.tmp"
+                    echo "Skipped: Compressed file was not smaller."
+                  fi
+                fi
               fi
-            fi
-          done
+            done
+          fi
 
       - name: Generate catalog.json
         run: |
           python3 -c '
-          import os, json
+          import os, json, time
 
           subjects_dir = "subjects"
-          catalog = {}
+          categories = ["lessons", "assignments", "labs", "exams", "summaries"]
+          
+          catalog = {
+              "_metadata": {
+                  "generated_at": int(time.time()),
+                  "total_subjects": 0,
+                  "total_files": 0
+              },
+              "subjects": {}
+          }
+
+          def format_size(size_bytes):
+              if size_bytes < 1024:
+                  return f"{size_bytes} B"
+              elif size_bytes < 1024 * 1024:
+                  return f"{size_bytes / 1024:.1f} KB"
+              return f"{size_bytes / (1024 * 1024):.2f} MB"
+
+          total_files_count = 0
 
           if os.path.exists(subjects_dir):
               for subject in sorted(os.listdir(subjects_dir)):
                   sub_path = os.path.join(subjects_dir, subject)
                   if os.path.isdir(sub_path):
-                      catalog[subject] = {}
-                      for cat in ["lessons", "assignments", "labs", "exams", "summaries"]:
+                      catalog["subjects"][subject] = {}
+                      for cat in categories:
                           cat_path = os.path.join(sub_path, cat)
-                          catalog[subject][cat] = []
+                          catalog["subjects"][subject][cat] = []
                           if os.path.exists(cat_path) and os.path.isdir(cat_path):
                               for f in sorted(os.listdir(cat_path)):
                                   if f.lower().endswith(".pdf"):
                                       full_file_path = os.path.join(cat_path, f)
                                       file_size = os.path.getsize(full_file_path)
-                                      catalog[subject][cat].append({
+                                      total_files_count += 1
+                                      
+                                      catalog["subjects"][subject][cat].append({
                                           "name": f,
                                           "path": f"subjects/{subject}/{cat}/{f}",
-                                          "size": file_size
+                                          "size_bytes": file_size,
+                                          "size_formatted": format_size(file_size)
                                       })
 
+          catalog["_metadata"]["total_subjects"] = len(catalog["subjects"])
+          catalog["_metadata"]["total_files"] = total_files_count
+
           with open("catalog.json", "w", encoding="utf-8") as out:
-              json.dump(catalog, out, indent=2)
-          print("Successfully generated catalog.json")
+              json.dump(catalog, out, indent=2, ensure_ascii=False)
+
+          print(f"Generated catalog.json successfully ({total_files_count} files indexed).")
           '
 
       - name: Commit and push changes
