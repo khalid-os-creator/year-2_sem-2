@@ -27,7 +27,6 @@ jobs:
 
       - name: Auto-compress new or modified PDFs
         run: |
-          # Safe git diff check: falls back to all files if HEAD~1 does not exist
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
             FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep '\.pdf$' || true)
           else
@@ -42,7 +41,6 @@ jobs:
                 echo "Processing: $file"
                 ORIG_SIZE=$(stat -c%s "$file")
                 
-                # Compress via Ghostscript
                 gs -sDEVICE=pdfwrite \
                    -dCompatibilityLevel=1.4 \
                    -dPDFSETTINGS=/ebook \
@@ -51,7 +49,6 @@ jobs:
 
                 if [ -f "${file}.tmp" ]; then
                   NEW_SIZE=$(stat -c%s "${file}.tmp")
-                  # Only replace if compressed file is smaller and non-empty
                   if [ "$NEW_SIZE" -lt "$ORIG_SIZE" ] && [ "$NEW_SIZE" -gt 0 ]; then
                     mv "${file}.tmp" "$file"
                     echo "Compressed: $ORIG_SIZE -> $NEW_SIZE bytes"
@@ -67,58 +64,45 @@ jobs:
       - name: Generate catalog.json
         run: |
           python3 -c '
-          import os, json, time
+          import os, json, re
 
           subjects_dir = "subjects"
           categories = ["lessons", "assignments", "labs", "exams", "summaries"]
-          
-          catalog = {
-              "_metadata": {
-                  "generated_at": int(time.time()),
-                  "total_subjects": 0,
-                  "total_files": 0
-              },
-              "subjects": {}
-          }
+          catalog = {}
 
-          def format_size(size_bytes):
-              if size_bytes < 1024:
-                  return f"{size_bytes} B"
-              elif size_bytes < 1024 * 1024:
-                  return f"{size_bytes / 1024:.1f} KB"
-              return f"{size_bytes / (1024 * 1024):.2f} MB"
-
-          total_files_count = 0
+          def clean_str(s):
+              # Strip hidden Unicode direction/control characters (like \u200f, \u200e)
+              return re.sub(r"[\u200e\u200f\u200b-\u200d\ufeff]", "", s).strip()
 
           if os.path.exists(subjects_dir):
               for subject in sorted(os.listdir(subjects_dir)):
                   sub_path = os.path.join(subjects_dir, subject)
                   if os.path.isdir(sub_path):
-                      catalog["subjects"][subject] = {}
+                      clean_subj = clean_str(subject)
+                      catalog[clean_subj] = {}
+                      
                       for cat in categories:
                           cat_path = os.path.join(sub_path, cat)
-                          catalog["subjects"][subject][cat] = []
+                          catalog[clean_subj][cat] = []
+                          
                           if os.path.exists(cat_path) and os.path.isdir(cat_path):
                               for f in sorted(os.listdir(cat_path)):
                                   if f.lower().endswith(".pdf"):
                                       full_file_path = os.path.join(cat_path, f)
                                       file_size = os.path.getsize(full_file_path)
-                                      total_files_count += 1
+                                      clean_name = clean_str(f)
                                       
-                                      catalog["subjects"][subject][cat].append({
-                                          "name": f,
+                                      catalog[clean_subj][cat].append({
+                                          "name": clean_name,
                                           "path": f"subjects/{subject}/{cat}/{f}",
-                                          "size_bytes": file_size,
-                                          "size_formatted": format_size(file_size)
+                                          "size": file_size
                                       })
 
-          catalog["_metadata"]["total_subjects"] = len(catalog["subjects"])
-          catalog["_metadata"]["total_files"] = total_files_count
-
+          # ensure_ascii=False forces native UTF-8 (Arabic stays Arabic instead of \u062d...)
           with open("catalog.json", "w", encoding="utf-8") as out:
               json.dump(catalog, out, indent=2, ensure_ascii=False)
 
-          print(f"Generated catalog.json successfully ({total_files_count} files indexed).")
+          print("Successfully generated clean catalog.json")
           '
 
       - name: Commit and push changes
